@@ -1,0 +1,8 @@
+.close {
+  background-color: transparent;
+  appearance: none;
+  outline: none;
+  border: none;
+
+  cursor: pointer;
+}

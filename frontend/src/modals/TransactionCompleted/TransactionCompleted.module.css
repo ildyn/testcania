@@ -1,0 +1,32 @@
+.description {
+  margin-bottom: 96px;
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  font-feature-settings:
+    'pnum' on,
+    'lnum' on;
+
+  color: rgba(16, 19, 90, 0.5);
+}
+
+.image__wrapper {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  width: 140px;
+  height: 140px;
+}
+
+.close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+}

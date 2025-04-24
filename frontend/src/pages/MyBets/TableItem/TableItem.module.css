@@ -1,0 +1,46 @@
+.base {
+  padding: 12px;
+  border-radius: 16px;
+  background: #f1f1f5;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.row__title {
+  max-width: 50%;
+  margin-right: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: #10135a;
+}
+
+.row__value {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+
+  color: #10135a;
+}
+
+.row__value--bold {
+  font-weight: 700;
+}
+
+.row__value--negative {
+  color: #ff7d5b;
+}
+
+.row__value--positive {
+  color: #a3dd80;
+}

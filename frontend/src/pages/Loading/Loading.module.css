@@ -1,0 +1,24 @@
+.base {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  height: 100%;
+}
+
+.logo__text {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 35px;
+  text-align: center;
+  font-feature-settings:
+    'pnum' on,
+    'lnum' on;
+
+  color: #10135a;
+}
+
+.logo__text:not(:last-child) {
+  margin-bottom: 15px;
+}

@@ -1,0 +1,52 @@
+.base {
+  --text-color: #000;
+
+  position: relative;
+
+  width: 100%;
+  height: 96px;
+  border-radius: 17px;
+
+  background: #f7f7f7;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 12px 0;
+}
+
+.base.isActive {
+  --text-color: #fff;
+
+  background: #2341BA;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  font-feature-settings:
+    'pnum' on,
+    'lnum' on;
+
+  color: var(--text-color);
+}
+
+.icon__wrapper {
+  width: 28px;
+  height: 28px;
+
+  margin: 4px 0;
+}
+
+.reward {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  font-feature-settings:
+    'pnum' on,
+    'lnum' on;
+
+  color: var(--text-color);
+}

@@ -1,0 +1,317 @@
+.base {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.title__container {
+  padding: 32px 0;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text);
+  text-align: center;
+}
+
+.description {
+  margin-top: 4px;
+
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  letter-spacing: 0.12em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.content {
+  background-color: var(--bg-primary);
+  flex: 1;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: 20px 20px 0;
+
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: 0 -10px 50px 0 var(--shadow-color);
+}
+
+.content__wrapper {
+  flex: 1 1 0;
+  overflow: auto;
+  padding-bottom: 8px;
+}
+
+.clock__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.clock__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.clock__container {
+  display: flex;
+  align-items: center;
+}
+
+.clock__title {
+  margin-left: 8px;
+  margin-top: 2px;
+
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  /* identical to box height, or 147% */
+  font-feature-settings:
+    'pnum' on,
+    'lnum' on;
+
+  color: var(--text);
+
+  user-select: none;
+}
+
+.clock__value {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  /* identical to box height, or 147% */
+  text-align: right;
+  font-feature-settings:
+    'pnum' on,
+    'lnum' on;
+
+  color: var(--text);
+
+  user-select: none;
+}
+
+.balance__container {
+  margin-top: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.balance__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: var(--text);
+
+  user-select: none;
+}
+
+.balance__value {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: var(--text);
+
+  user-select: none;
+}
+
+.buttons__container {
+  margin-top: 12px;
+
+  display: flex;
+}
+
+.buttons__container > *:not(:last-child) {
+  margin-right: 20px;
+}
+
+.button--premium {
+  margin-top: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  max-height: 44px;
+}
+
+.button--game {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px;
+  width: 44px;
+  min-width: 44px;
+  height: 44px;
+
+  font-size: 8px;
+
+  color: var(--text);
+  background-color: #e2e2ec;
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+.stats__container {
+  margin-top: 12px;
+}
+
+.stats__title {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  font-feature-settings:
+    'pnum' on,
+    'lnum' on;
+
+  color: var(--text);
+
+  user-select: none;
+}
+
+.progress {
+  margin-top: 8px;
+
+  height: 8px;
+  border-radius: 2px;
+
+  display: flex;
+}
+
+.progress__bar {
+  height: 100%;
+  width: 100%;
+}
+
+.progress__bar.green {
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  background: #a4d49c;
+}
+
+.progress__bar.red {
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  background: #ff7d5b;
+}
+
+.values__wrapper {
+  margin-top: 8px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats__value {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  font-feature-settings:
+    'pnum' on,
+    'lnum' on;
+
+  user-select: none;
+}
+
+.stats__value.green {
+  color: #a4d49c;
+}
+
+.stats__value.red {
+  color: #ff7d5b;
+}
+
+.bet-buttons__container {
+  margin-top: 12px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.bet-button {
+  width: 56px;
+  height: 56px;
+}
+
+.input__container {
+  margin-top: 12px;
+}
+
+.input-title__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input__title {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  font-feature-settings:
+    'pnum' on,
+    'lnum' on;
+
+  color: var(--text);
+
+  user-select: none;
+}
+
+.input__rate {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  font-feature-settings:
+    'pnum' on,
+    'lnum' on;
+
+  color: var(--text);
+}
+
+.input {
+  all: unset;
+  box-sizing: border-box;
+
+  margin-top: 8px;
+
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+
+  padding: 14px;
+  background: var(--input-bg);
+
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  font-feature-settings:
+    'pnum' on,
+    'lnum' on;
+
+  color: var(--text);
+}
+
+.yellow {
+  --text: #fec541;
+
+  color: var(--text);
+}
+
+.input::placeholder {
+  color: var(--text);
+}

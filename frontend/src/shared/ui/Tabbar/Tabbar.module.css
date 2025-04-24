@@ -1,0 +1,11 @@
+.base {
+  width: 100%;
+  padding: 12px 16px;
+  background: var(--bg-primary);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-top: 1px solid var(--tabbar-border);
+}

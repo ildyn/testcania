@@ -1,0 +1,59 @@
+.image {
+  width: 80px;
+  height: 80px;
+}
+
+.image__wrapper {
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  margin-top: 37px;
+
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: -0.02em;
+  font-feature-settings:
+    'pnum' on,
+    'lnum' on;
+
+  color: #10135a;
+}
+
+.description {
+  margin-top: 10px;
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  font-feature-settings:
+    'pnum' on,
+    'lnum' on;
+
+  color: rgba(16, 19, 90, 0.5);
+}
+
+.green {
+  color: #50af95;
+}
+
+.red {
+  color: #ff7d5b;
+}
+
+.button__wrapper {
+  margin-top: 40px;
+}
+
+.close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+}

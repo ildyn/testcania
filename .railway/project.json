@@ -1,0 +1,5 @@
+{
+  "build": {
+    "dockerComposeFile": "infra/docker-compose.yml"
+  }
+}

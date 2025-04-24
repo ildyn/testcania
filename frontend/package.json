@@ -1,0 +1,56 @@
+{
+  "name": "go-invest-frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "generate:types": "openapi-typescript https://current-tma-go-invest-backend-staging.jago.agency/openapi.json -o ./src/shared/api/v1.d.ts",
+    "prebuild": "npm run generate:types"
+  },
+  "dependencies": {
+    "@twa-dev/sdk": "^7.8.0",
+    "clsx": "^2.1.1",
+    "copy-to-clipboard": "^3.3.3",
+    "jotai": "^2.9.3",
+    "openapi-fetch": "^0.11.2",
+    "react": "^18.3.1",
+    "react-countdown": "^2.3.6",
+    "react-dom": "^18.3.1",
+    "react-lottie": "^1.2.4",
+    "react-select": "^5.8.0",
+    "react-spring": "^9.7.4",
+    "react-spring-modal": "^2.0.7",
+    "sonner": "^1.5.0",
+    "wouter": "^3.3.4"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "@types/node": "^22.5.0",
+    "@types/postcss-pxtorem": "^6.0.3",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@types/react-lottie": "^1.2.10",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^9.9.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-perfectionist": "^3.2.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.9",
+    "globals": "^15.9.0",
+    "openapi-typescript": "^7.3.2",
+    "postcss": "^8.4.41",
+    "postcss-pxtorem": "^6.1.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^8.0.1",
+    "vite": "^5.4.1"
+  }
+}

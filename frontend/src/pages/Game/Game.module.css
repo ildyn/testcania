@@ -1,0 +1,153 @@
+.base {
+  height: 100%;
+
+  display: flex;
+  background-color: white;
+}
+
+.content {
+  flex: 1;
+  height: 100vh;
+
+  background: var(--bg-primary);
+  padding: 0 20px 30px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.title__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 18px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+.subtitle {
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+
+  color: rgba(16, 19, 90, 0.5);
+  letter-spacing: 0.12em;
+}
+
+.game {
+  position: relative;
+
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #F1F1F5;
+  border-radius: 16px;
+
+  padding: 28px;
+  margin-bottom: 32px;
+}
+
+.game_image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: fit-content;
+  height: 86px;
+  display: flex;
+  justify-content: center;
+}
+
+.line {
+  width: 4px;
+  height: 100%;
+  border-radius: 8px;
+  background: var(--text-light);
+}
+
+.logo_right {
+  transform: scaleX(-1);
+  max-height: 86px;
+}
+
+.logo_left {
+  max-height: 86px;
+  max-width: 99px;
+}
+
+.buttons__container {
+  margin-top: 20px;
+  width: 100%;
+
+  display: flex;
+}
+
+.buttons__container > *:not(:last-child) {
+  margin-right: 12px;
+}
+
+.rows__container {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  padding: 10px 18px;
+  background: #f8f8fa;
+  border-radius: 8px;
+
+  margin-bottom: 8px;
+}
+
+.row__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 32px;
+  height: 38px;
+
+  margin-right: 12px;
+}
+
+.row__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+
+  font-feature-settings:
+    'pnum' on,
+    'lnum' on;
+
+  color: #10135a;
+}
+
+.row__description {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+
+  color: #10135a;
+}
+
+.button__container {
+
+  display: flex;
+  width: 100%;
+}

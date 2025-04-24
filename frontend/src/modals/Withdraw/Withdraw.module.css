@@ -1,0 +1,67 @@
+.title {
+  margin-top: 30px;
+  margin-bottom: 12px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  font-feature-settings:
+    'pnum' on,
+    'lnum' on;
+
+  color: #10135a;
+}
+
+.select__wrapper:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.input__wrapper {
+  margin-top: 12px;
+}
+
+.input__title {
+  margin-bottom: 8px;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  font-feature-settings:
+    'pnum' on,
+    'lnum' on;
+
+  color: rgba(16, 19, 90, 0.5);
+}
+
+.input {
+  all: unset;
+  box-sizing: border-box;
+  width: 100%;
+
+  background: #f8f8fa;
+  border-radius: 8px;
+  padding: 15px 14px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  font-feature-settings:
+    'pnum' on,
+    'lnum' on;
+  color: #000000;
+}
+
+.input::placeholder {
+  color: rgba(16, 19, 90, 0.25);
+}
+
+.button__wrapper {
+  margin-top: 34px;
+}
+
+.close {
+  margin-left: 90%;
+}

@@ -1,0 +1,29 @@
+.base {
+   padding: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.text {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text);
+}
+
+.deposit {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.deposit button {
+  color: var(--text);
+}
